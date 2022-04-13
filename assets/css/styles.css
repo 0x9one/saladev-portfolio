@@ -324,7 +324,47 @@ img {
 }
 
 /*=============== SKILLS ===============*/
+.skills_content {
+  row-gap: 3.5rem;
+}
 
+.skills_title {
+  font-size: var(--h3-font-size);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.skills_box {
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+}
+
+.skills_group {
+  display: grid;
+  align-content: flex-start;
+  row-gap: 1rem;
+}
+
+.skills_data {
+  display: flex;
+  column-gap: .5rem;
+}
+
+.skills_data i {
+  font-size: 1rem;
+  color: var(--first-color);
+}
+
+.skills_name {
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.skills_level {
+  font-size: var(--smaller-font-size);
+}
 
 /* Hide and show projects & skills */
 
