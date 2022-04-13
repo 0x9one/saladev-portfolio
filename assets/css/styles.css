@@ -316,8 +316,6 @@ body.dark_theme {
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
-  width: 400px;
-  height: 100%;
 }
 
 .projects_card img {
@@ -446,9 +444,111 @@ body.dark_theme {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 
+  .profile_info {
+    column-gap: 1.5rem;
+  }
+
+  .profile_buttons {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .skills_box {
+    column-gap: 1rem;
+  }
+}
 
 /* For medium devices */
+@media screen and (min-width: 576px) {
+  .projects_content {
+    grid-template-columns: 332px;
+    justify-content: center;
+  }
 
+  .filters_content {
+    width: 332px;
+    margin: 3rem auto;
+  }
+}
+
+@media screen and (min-width: 776px) {
+  .projects_content,
+  .skills_content {
+    grid-template-columns: repeat(2, 332px);
+  }
+
+  .skills_content {
+    justify-content: center;
+    column-gap: 3rem;
+  }
+}
 
 /* For large devices */
+@media screen and (min-width: 992px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  .change_theme {
+    top: 2.5rem;
+    right: 2.5rem;
+  }
+
+  .profile {
+    padding-top: 4rem;
+  }
+
+  .profile_border {
+    width: 135px;
+    height: 135px;
+    margin-bottom: 1rem;
+  }
+
+  .profile_salah {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile_salah img {
+    width: 90px;
+  }
+
+  .profile_profession {
+    margin-bottom: 1.5rem;
+  }
+
+  .profile_info {
+    column-gap: 3rem;
+  }
+
+  .profile_info_description {
+    font-size: var(--small-font-size);
+  }
+
+  .profile_buttons {
+    column-gap: 2rem;
+  }
+
+  .projects_content {
+    gap: 2rem 3rem;
+  }
+  .projects_modal {
+    padding: 1.5rem;
+  }
+
+  .skills_title {
+    font-size: var(--normal-font-size);
+    margin-bottom: 2.5rem;
+  }
+
+  .footer_copyright {
+    margin: 4.5rem 0 2.5rem;
+  }
+}
