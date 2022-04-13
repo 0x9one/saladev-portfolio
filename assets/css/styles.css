@@ -367,10 +367,18 @@ img {
 }
 
 /* Hide and show projects & skills */
+.filters [data-content] {
+  display: none;
+}
 
+.filters_active[data-content] {
+  display: grid;
+}
 
 /* Activate button filter */
-
+.filters_tab_active {
+  background-color: var(--body-color);
+}
 
 /*=============== FOOTER ===============*/
 
